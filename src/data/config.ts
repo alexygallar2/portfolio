@@ -11,9 +11,8 @@ const config = {
     },
   },
   meta: {
-    title: 'Mark Freeman - Senior React Developer',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales ac dui at vestibulum. In condimentum metus id dui tincidunt, in blandit mi vehicula.',
+    title: 'Alexy Gallardo - Senior Software Developer Engineer',
+    description: 'A full-stack developer with 10 years of experience in the analysis and development of software.',
     faviconPath: '/src/assets/my-image.jpeg',
   },
   pdf: {

@@ -5,11 +5,15 @@ import {
   chakraUi,
   eslint,
   firebase,
+  javaScript,
+  mongoDb,
   nextJs,
+  nodeJs,
   nx,
   pnpm,
   react,
   reactQuery,
+  redux,
   tailwindCss,
   typescript,
   vue,
@@ -24,59 +28,28 @@ const experienceSectionData = {
   },
   jobs: [
     {
-      role: 'Senior front-end developer',
-      company: 'Google',
-      image: import('@/assets/logos/google-logo.jpg'),
-      dates: [new Date('2020-02'), null],
+      role: 'Senior software developer engineer',
+      company: 'NTSprint',
+      image: import('@/assets/logos/ntsprint.jpeg'),
+      dates: [new Date('2022-09'), null],
       description: `
-        - In tristique vulputate augue vel egestas.
-        - Quisque ac imperdiet tortor, at lacinia ex.
-        - Duis vel ex hendrerit, commodo odio sed, aliquam enim.
-        - Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi.
-        - Nunc malesuada leo et est iaculis facilisis.
-        - Fusce eu urna ut magna malesuada fringilla.
+        - Built a full-stack application using React, Next.js, and MongoDB.
+        - Implemented a robust authentication system.
+        - Developed a robust API using Node.JS and MongoDB.
+        - Designed and implemented a responsive user interfaces.
+        - Implemented a robust error handling.
+        - Conducted thorough code reviews and provided constructive feedback.
+        - Collaborated with cross-functional teams to deliver high-quality software solutions.
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), nextJs(), typescript(), nx(), firebase()],
+        tags: [react(), nextJs(), javaScript(), mongoDb(), nodeJs(), redux()],
       },
-      links: [facebook({ url: '#' }), linkedin({ url: '#' })],
-    },
-    {
-      role: 'React.js developer',
-      company: 'Facebook',
-      image: import('@/assets/logos/facebook-logo.png'),
-      dates: [new Date('2019-04'), new Date('2020-02')],
-      description: `
-        - Aenean eget ultricies felis. Pellentesque dictum massa ut tellus eleifend, sed posuere massa mattis.
-        - Ut posuere massa lacus, eleifend molestie tortor auctor vel.
-        - Sed sed sollicitudin eros, id ultricies mi. Aliquam sodales elit vel ante tempor, non vehicula nibh facilisis.
-        - Cras feugiat ultricies maximus. Aliquam tristique ex odio, ac semper urna accumsan a.
-      `,
-      tagsList: {
-        title: 'Technologies',
-        tags: [react(), reactQuery(), chakraUi(), eslint()],
-      },
-      links: [website({ url: '#' }), instagram({ url: '#' })],
-    },
-    {
-      role: 'Junior front-end developer',
-      company: 'GitLab',
-      image: import('@/assets/logos/gitlab-logo.png'),
-      dates: [new Date('2016-09'), new Date('2019-04')],
-      description: `
-        Nulla volutpat justo ante, rhoncus posuere massa egestas in:
-
-        - Quisque pellentesque, dolor nec sollicitudin iaculis, sem velit consequat ligula, eget tempus ligula leo et est.
-        - Maecenas ut elit sit amet nibh maximus condimentum in nec lorem. Pellentesque tincidunt odio vel leo suscipit, in interdum mi gravida.
-
-        Donec non vulputate augue 🤓
-      `,
-      tagsList: {
-        title: 'Technologies',
-        tags: [vue(), tailwindCss(), pnpm()],
-      },
-      links: [twitter({ url: '#' }), github({ url: '#' })],
+      links: [
+        website({ url: 'https://ntsprint.com/' }),
+        facebook({ url: 'https://www.facebook.com/ntsprintllc' }),
+        linkedin({ url: 'https://www.linkedin.com/company/ntsprint/' }),
+      ],
     },
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;

@@ -10,30 +10,43 @@ const mainSectionData = {
     visible: true,
   },
   image: import('@/assets/my-image.jpeg'),
-  fullName: 'Mark Freeman',
-  role: 'Senior React Developer',
+  fullName: 'Alexy Gallardo Segura',
+  role: 'Senior Software Developer Engineer',
   details: [
-    { label: 'Phone', value: '605 475 6961', url: 'tel:605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com', url: 'mailto:mark.freeman.dev@gmail.com' },
-    { label: 'From', value: 'Warsaw, Poland' },
-    { label: 'Salary range', value: '18 000 - 25 000 PLN' },
+    { label: 'Phone', value: '+5358727662', url: 'tel:5358727662' },
+    { label: 'Email', value: 'alexy.gallardo@ntsprint.com', url: 'mailto:alexy.gallardo@ntsprint.com' },
+    { label: 'From', value: 'Villa Clara, Cuba' },
+    { label: 'Location', value: 'Remote' },
   ],
   pdfDetails: [
-    { label: 'Phone', value: '605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com' },
-    { label: 'LinkedIn', value: '/in/mark-freeman', url: 'https://linkedin.com' },
-    { label: 'GitHub', value: '/mark-freeman', url: 'https://github.com' },
-    { label: 'Website', value: 'mark-freeman-personal-website.com', url: '/', fullRow: true },
+    { label: 'Phone', value: '5358727662' },
+    { label: 'Email', value: 'alexy.gallardo@ntsprint.com' },
+    { label: 'LinkedIn', value: '/in/alexy-gallardo-b81880109/', url: 'https://linkedin.com' },
+    { label: 'GitHub', value: '/alexygallar2', url: 'https://github.com' },
+    { label: 'Website', value: 'alexygallar2.com', url: '/', fullRow: true },
   ],
   description:
-    'Lorem ipsum dolor sit amet, consectetur **adipiscing elit**. In sodales ac dui at *vestibulum*. In condimentum metus id dui tincidunt, in blandit mi [vehicula](/). Nulla lacinia, erat sit amet elementum vulputate, lectus mauris volutpat mi, vitae accumsan metus elit ut nunc. Vestibulum lacinia enim eget eros fermentum scelerisque. Proin augue leo, posuere ut imperdiet vitae, fermentum eu ipsum. Sed sed neque sagittis, posuere urna nec, commodo leo. Pellentesque posuere justo vitae massa volutpat maximus.',
-  tags: [{ name: 'Open for freelance' }, { name: 'Available for mentoring' }, { name: 'Working on side project' }],
+    'A full-stack developer with 10 years of experience in the analysis and development of software.<br/>' +
+    '<br/>' +
+    'Capable of managing multiple tasks concurrently with a focus on achieving outcomes, employing all abilities to the fullest extent, and leveraging the expertise in a collaborative environment. <br/>' +
+    '<br/>' +
+    'Able to work under pressure<br/>' +
+    '<br/>' +
+    'Always delighted to acquire knowledge and skills in new technologies and take up challenging projects that require technical expertise.<br/>' +
+    '<br/>' +
+    'Dedicated, hardworking, and committed to delivering high-quality software solutions that meet or exceed their clients’ expectations.',
+  tags: [{ name: 'Team-player' }, { name: 'Hard-working' }, { name: 'Proactive' }],
   action: {
     label: 'Download CV',
     url: '/cv.pdf',
-    downloadedFileName: 'CV-Mark_Freeman.pdf',
+    downloadedFileName: 'CV-Alexy_Gallardo.pdf',
   },
-  links: [facebook({ url: '#' }), github({ url: '#' }), linkedin({ url: '#' }), twitter({ url: '#' })],
+  links: [
+    facebook({ url: 'https://www.facebook.com/alexy.gallar2/' }),
+    github({ url: 'https://github.com/alexygallar2' }),
+    linkedin({ url: 'https://www.linkedin.com/in/alexy-gallardo-b81880109/' }),
+    twitter({ url: 'https://x.com/alexy_gallardo' }),
+  ],
 } as const satisfies ReadonlyDeep<MainSection>;
 
 export default mainSectionData;

@@ -164,3 +164,94 @@ export const vue = createSkillFactory({
   iconColor: '#4FC08D',
   url: 'https://vuejs.org/',
 });
+
+export const nodeJs = createSkillFactory({
+  name: 'Node.JS',
+  icon: 'simple-icons:nodedotjs',
+  iconColor: '#417e38',
+  url: 'https://nodejs.org/en/',
+});
+
+export const javaScript = createSkillFactory({
+  name: 'JavaScript',
+  icon: 'simple-icons:javascript',
+  iconColor: '#F0DB4F',
+  url: 'https://www.javascript.com/',
+});
+
+export const python = createSkillFactory({
+  name: 'Python',
+  icon: 'simple-icons:python',
+  iconColor: '#3776AB',
+  url: 'https://www.python.org/',
+});
+
+export const php = createSkillFactory({
+  name: 'PHP',
+  icon: 'simple-icons:php',
+  iconColor: '#777BB4',
+  url: 'https://www.php.net/',
+});
+
+export const laravel = createSkillFactory({
+  name: 'Laravel',
+  icon: 'simple-icons:laravel',
+  iconColor: '#FF2D20',
+  url: 'https://laravel.com/',
+});
+
+export const sqlServer = createSkillFactory({
+  name: 'SQL Server',
+  icon: 'simple-icons:microsoftsqlserver',
+  iconColor: '#008080',
+  url: 'https://www.microsoft.com/es-es/sql-server',
+});
+
+export const java = createSkillFactory({
+  name: 'Java',
+  icon: 'simple-icons:java',
+  iconColor: '#007396',
+  url: 'https://www.java.com/',
+});
+
+export const materialUi = createSkillFactory({
+  name: 'Material UI',
+  icon: 'simple-icons:mui',
+  iconColor: '#0081CB',
+  url: 'https://mui.com/',
+});
+
+export const antDesign = createSkillFactory({
+  name: 'Ant Design',
+  icon: 'simple-icons:antdesign',
+  iconColor: '#FF7336',
+  url: 'https://ant.design/',
+});
+
+export const git = createSkillFactory({
+  name: 'Git',
+  icon: 'simple-icons:git',
+  iconColor: '#F14E32',
+  url: 'https://git-scm.com/',
+});
+
+export const html = createSkillFactory({
+  name: 'HTML',
+  icon: 'simple-icons:html5',
+  iconColor: '#E34F26',
+  url: 'https://www.w3.org/TR/html/',
+});
+
+export const css = createSkillFactory({
+  name: 'CSS',
+  icon: 'simple-icons:css3',
+  iconColor: '#1572B6',
+  url: 'https://www.w3.org/TR/CSS/',
+});
+
+export const redux = createSkillFactory({
+  name: 'Redux',
+  icon: 'simple-icons:redux',
+  iconColor: '#764ABC',
+  url: 'https://redux.js.org/',
+});
