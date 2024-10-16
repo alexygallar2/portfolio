@@ -255,3 +255,24 @@ export const redux = createSkillFactory({
   iconColor: '#764ABC',
   url: 'https://redux.js.org/',
 });
+
+export const MySQL = createSkillFactory({
+  name: 'MySQL',
+  icon: 'simple-icons:mysql',
+  iconColor: '#4479A1',
+  url: 'https://www.mysql.com/',
+});
+
+export const Lookerstudio = createSkillFactory({
+  name: 'Lookerstudio',
+  icon: 'simple-icons:google',
+  iconColor: '#4285F4',
+  url: 'https://lookerstudio.google.com/',
+});
+
+export const recharts = createSkillFactory({
+  name: 'Recharts',
+  icon: 'simple-icons:chartdotjs',
+  iconColor: '#0088FE',
+  url: 'https://recharts.org/',
+});

@@ -29,7 +29,7 @@ const { title, slug, hideTitle, className, visible } = Astro.props;
 
   const sections = [...document.querySelectorAll('[data-type="section"]')];
 
-  const isInUpperView = (section: Element) => section.getBoundingClientRect().bottom >= window.innerHeight / 3;
+  const isInUpperView = (section: Element) => section.getBoundingClientRect().bottom >= window.innerHeight / 2.5;
 
   const updateHash = () => {
     const currentSection = sections.find(isInUpperView);

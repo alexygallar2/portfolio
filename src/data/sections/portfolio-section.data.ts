@@ -7,7 +7,9 @@ import {
   firebase,
   javaScript,
   jest,
+  Lookerstudio,
   mongoDb,
+  MySQL,
   nestJs,
   nextJs,
   nodeJs,
@@ -16,8 +18,10 @@ import {
   postgreSql,
   prettier,
   react,
+  recharts,
   redux,
   sass,
+  sqlServer,
   tailwindCss,
   typescript,
 } from '../helpers/skills';
@@ -46,9 +50,8 @@ const portfolioSectionData = {
       ],
       pdfDetails: [{ label: 'WebSite', value: 'https://thetastyplate.com', url: 'https://thetastyplate.com' }],
       screenshots: [
-        { src: import('@/assets/portfolio/project-1-screenshot-1.jpg'), alt: 'First screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-2.jpg'), alt: 'Second screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-3.jpg'), alt: 'Third screenshot' },
+        { src: import('@/assets/portfolio/thetastyplate-screen1.png'), alt: 'First screenshot' },
+        { src: import('@/assets/portfolio/thetastyplate-screen2.png'), alt: 'Second screenshot' },
       ],
       description: `
       - An inherited e-commerce platform that presented numerous technical challenges.
@@ -65,6 +68,32 @@ const portfolioSectionData = {
         tags: [nextJs(), react(), redux(), javaScript(), nodeJs(), mongoDb()],
       },
       links: [website({ url: 'https://thetastyplate.com' })],
+    },
+    {
+      name: 'Clinic GymHybrid Solutions',
+      image: import('@/assets/logos/janeApp-logo.png'),
+      dates: [new Date('2023-07'), new Date('2023-08')],
+      details: [
+        { label: 'Team size', value: '4 people' },
+        { label: 'My role', value: ['Full Stack Developer'] },
+        { label: 'Company', value: 'NtSprint' },
+        { label: 'Category', value: ['Web app', 'Medical services', 'Charts', 'Reports'] },
+      ],
+      pdfDetails: [],
+      screenshots: [
+        { src: import('@/assets/portfolio/clinic-1.png'), alt: 'First screenshot' },
+        { src: import('@/assets/portfolio/clinic-3.png'), alt: 'Second screenshot' },
+      ],
+      description: `
+        - Implementing Chart in Next.js SAAS platform
+        - Replicating Lookerstudio report using any Charts tools
+        - Ensuring the data visualizations are accurate and responsive
+      `,
+      tagsList: {
+        title: 'Technologies',
+        tags: [nextJs(), react(), javaScript(), MySQL(), nodeJs(), Lookerstudio(), recharts()],
+      },
+      links: [],
     },
   ],
 } as const satisfies ReadonlyDeep<PortfolioSection>;

@@ -6,7 +6,9 @@ import {
   eslint,
   firebase,
   javaScript,
+  laravel,
   mongoDb,
+  MySQL,
   nextJs,
   nodeJs,
   nx,
@@ -31,7 +33,7 @@ const experienceSectionData = {
       role: 'Senior software developer engineer',
       company: 'NTSprint',
       image: import('@/assets/logos/ntsprint.jpeg'),
-      dates: [new Date('2022-09'), null],
+      dates: [new Date('2022-10'), null],
       description: `
         - Built a full-stack application using React, Next.js, and MongoDB.
         - Implemented a robust authentication system.
@@ -50,6 +52,24 @@ const experienceSectionData = {
         facebook({ url: 'https://www.facebook.com/ntsprintllc' }),
         linkedin({ url: 'https://www.linkedin.com/company/ntsprint/' }),
       ],
+    },
+
+    {
+      role: 'Software developer engineer',
+      company: 'TecnoSHR SURL',
+      image: import('@/assets/logos/tecnohsr.png'),
+      dates: [new Date('2021-09'), new Date('2022-10')],
+      description: `
+        - Implemented a internal control applications
+        - Built a full-stack application using React, Laravel, and MySQL.
+        - Implemented a robust authentication and permissions system using Laravel.
+        - Developed a robust API using Laravel.
+      `,
+      tagsList: {
+        title: 'Technologies',
+        tags: [react(), nextJs(), javaScript(), laravel(), MySQL()],
+      },
+      links: [website({ url: 'https://elyerromenu.com/b/tecnohsr/' })],
     },
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;
